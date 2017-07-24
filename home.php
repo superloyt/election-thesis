@@ -12,8 +12,7 @@
 </head>
 <body>
   <?php
-  include "navbar-guest.php";
+  include "navbar-user.php";
    ?>
-
 </body>
 </html>

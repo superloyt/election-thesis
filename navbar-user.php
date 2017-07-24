@@ -1,4 +1,4 @@
-<!-- NAVBAR PHP -->
+<!-- NAVBAR-USER -->
 
 <html>
 <head>
@@ -7,22 +7,20 @@
   <meta name="description" content="TUP Online Election">
   <title>TUP Online Election</title>
   <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="dist/css/bootstrap.css" rel="stylesheet" />
   <link href="dist/js/bootstrap.min.js" rel="stylesheet" />
+  <link href="dist/js/bootstrap.js" rel="stylesheet" />
   <link href="assets/css/tup-main.css" rel="stylesheet" />
 </head>
 <body>
   <div class="container-fluid">
-    <nav id="custom-bootstrap-menu" class="navbar navbar-default navbar-static-top" role="navigation">
+    <nav id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1 .navbar-menubuilder" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">
+            <img alt="TUP" src="assets/img/tup-logo.png" id="brand" />
+          </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -42,9 +40,10 @@
                 <li><a href="#">Vice Governors</a></li>
               </ul>
             </li>
+            <li><a href="#">Vote</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Sign in</a></li>
+            <li><a href="index.php">Sign out</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

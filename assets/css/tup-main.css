@@ -38,3 +38,8 @@
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #222222;
 }
+
+#brand {
+  width: 40px;
+  margin-top: -10px;
+}
