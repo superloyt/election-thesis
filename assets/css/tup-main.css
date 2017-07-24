@@ -43,3 +43,15 @@
   width: 40px;
   margin-top: -10px;
 }
+
+#login-bg {
+  background-color: white;
+}
+
+.red-text {
+  color: #bd2031;
+}
+
+.red-bg {
+  background-color: #bd2031;
+}
