@@ -21,9 +21,6 @@
   <script scr="dist/js/adminlte.min.js"></script>
 </head>
 <body>
-  <?php
-  include "navbar-guest.php";
-   ?>
-
+  
 </body>
 </html>
