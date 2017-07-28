@@ -11,6 +11,13 @@
   <link href="dist/bower_components/font-awesome/font-awesome.min.css" rel="stylesheet" />
   <link href="dist/bower_components/Ionicons/ionicons.min.css" rel="stylesheet" />
   <link href="dist/plugins/iCheck/square/blue.css" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/bower_components/bootstrap-daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="dist/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="dist/plugins/iCheck/all.css">
+  <link rel="stylesheet" href="dist/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+  <link rel="stylesheet" href="dist/plugins/timepicker/bootstrap-timepicker.min.css">
+  <link rel="stylesheet" href="dist/bower_components/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
 
   <link href="assets/css/tup-main.css" rel="stylesheet" />
   <link href="assets/css/tup-media.css" rel="stylesheet" />
@@ -19,7 +26,6 @@
   <script scr="dist/js/bootstrap.js"></script>
   <script scr="dist/js/adminlte.js"></script>
   <script scr="dist/js/adminlte.min.js"></script>
-
 </head>
 <body class="hold-transition login-page" id="login-bg">
   <div class="login-box">
@@ -29,19 +35,39 @@
     <!-- /.login-logo -->
 
     <div class="login-box-body">
-      <p class="login-box-msg">SIGN IN TO START VOTING!</p>
+      <p class="login-box-msg">REGISTER NOW!</p>
 
       <form action="home.php" method="post">
-        <div class="form-group has-feedback">
+        <div class="form-group">
           <input type="name" name="student-id" class="form-control" placeholder="STUDENT ID">
         </div>
-        <div class="form-group has-feedback">
-          <input type="password" name="password" class="form-control" placeholder="PASSWORD">
+        <div class="form-group">
+          <input type="email" name="email" class="form-control" placeholder="EMAIL">
+        </div>
+        <div class="form-group">
+          <input type="name" name="firstname" class="form-control" placeholder="FIRST NAME">
+        </div>
+        <div class="form-group">
+          <input type="name" name="midname" class="form-control" placeholder="MIDDLE NAME">
+        </div>
+        <div class="form-group">
+          <input type="name" name="lastname" class="form-control" placeholder="LAST NAME">
+        </div>
+        <div class="form-group">
+          <select class="form-control select2">
+            <option value="" selected="selected" disabled="disabled">SELECT YOUR COLLEGE</option>
+            <option value="CAFA">COLLEGE OF ARCHITECTURE AND FINE ARTS</option>
+            <option value="COE">COLLEGE OF ENGINEERING</option>
+            <option value="CIE">COLLEGE OF INDUSTRIAL EDUCATION</option>
+            <option value="CIT">COLLEGE OF INDUSTRIAL TECHNOLOGY</option>
+            <option value="CLA">COLLEGE OF LIBERAL ARTS</option>
+            <option value="COS">COLLEGE OF SCIENCE</option>
+          </select>
         </div>
         <div class="row">
           <!-- /.col -->
-          <div class="col-xs-4 col-xs-offset-4">
-            <button type="submit" class="btn btn-danger btn-block red-bg btn-flat">SIGN IN</button>
+          <div class="col-xs-6 col-xs-offset-3">
+            <button type="submit" class="btn btn-danger btn-block red-bg btn-flat">REGISTER</button>
           </div>
           <!-- /.col -->
         </div>
@@ -73,13 +99,11 @@
   <script src="dist/js/bootstrap.min.js"></script>
   <!-- iCheck -->
   <script src="dist/plugins/iCheck/icheck.min.js"></script>
+
+  <script src="dist/bower_components/select2/dist/js/select2.full.min.js"></script>
   <script>
     $(function () {
-      $('input').iCheck({
-        checkboxClass: 'icheckbox_square-blue',
-        radioClass: 'iradio_square-blue',
-        increaseArea: '20%' // optional
-      });
+      $('.select2').select2()
     });
     </script>
 </body>
