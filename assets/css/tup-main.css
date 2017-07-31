@@ -55,3 +55,7 @@
 .red-bg {
   background-color: #c33645;
 }
+
+.form-control {
+  border-radius: 0;
+}

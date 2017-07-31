@@ -33,7 +33,7 @@
         <ul class="nav navbar-nav">
           <li><a href="index.php">Home</a></li>
           <li class="dropdown">
-            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Candidates <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Candidates <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">President</a></li>
               <li><a href="#">Vice President</a></li>
