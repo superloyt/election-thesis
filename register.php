@@ -54,7 +54,7 @@
           <input type="name" name="lastname" class="form-control" placeholder="LAST NAME">
         </div>
         <div class="form-group has-feedback">
-          <select class="form-control select2">
+          <select class="form-control select">
             <option value="" selected="selected" disabled="disabled">SELECT YOUR COLLEGE</option>
             <option value="CAFA">COLLEGE OF ARCHITECTURE AND FINE ARTS</option>
             <option value="COE">COLLEGE OF ENGINEERING</option>
