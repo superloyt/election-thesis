@@ -15,7 +15,7 @@
   <link href="dist/bower_components/font-awesome/font-awesome.min.css" rel="stylesheet" />
   <link href="dist/bower_components/Ionicons/ionicons.min.css" rel="stylesheet" />
   <link href="dist/plugins/iCheck/square/blue.css" rel="stylesheet" />
-  
+
   <link href="assets/css/tup-main.css" rel="stylesheet" />
   <link href="assets/css/tup-media.css" rel="stylesheet" />
 </head>
@@ -23,5 +23,16 @@
   <?php
   include "navbar-user.php";
    ?>
+   <script scr="dist/js/bootstrap.min.js"></script>
+
+   <script scr="dist/js/adminlte.js"></script>
+
+   <script scr="dist/js/adminlte.min.js"></script>
+   <script>
+   $(function) {
+     $('.dropdown-toggle').dropdown();
+   });
+
+   </script>
 </body>
 </html>
