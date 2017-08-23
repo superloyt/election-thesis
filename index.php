@@ -25,5 +25,17 @@
   include "navbar-guest.php";
    ?>
 
+   <script scr="dist/js/bootstrap.min.js"></script>
+
+   <script scr="dist/js/adminlte.js"></script>
+
+   <script scr="dist/js/adminlte.min.js"></script>
+   <script>
+   $(function) {
+     $('.dropdown-toggle').dropdown();
+   });
+
+   </script>
+
 </body>
 </html>
