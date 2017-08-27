@@ -45,7 +45,7 @@
               <li><a href="#">Vice Governors</a></li>
             </ul>
           </li>
-          <li><a href="index.php">Election Results</a></li>
+          <li><a href="electionresult-guest.php">Election Results</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="login.php">Sign in</a></li>
