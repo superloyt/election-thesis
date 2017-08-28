@@ -14,6 +14,8 @@
   <link href="dist/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
   <link href="dist/bower_components/Ionicons/css/ionicons.min.css" rel="stylesheet" />
   <link href="dist/plugins/iCheck/square/blue.css" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/bower_components/morris.js/morris.css">
+  <link rel="stylesheet" href="dist/bower_components/bootstrap-daterangepicker/daterangepicker.css">
 
   <link href="assets/css/tup-main.css" rel="stylesheet" />
   <link href="assets/css/tup-media.css" rel="stylesheet" />
@@ -401,7 +403,24 @@
          immediately after the control sidebar -->
     <div class="control-sidebar-bg"></div>
   </div>
-  <!-- ./wrapper -->
+  <!-- Main row -->
+      <div class="row">
+        <!-- Left col -->
+        <section class="col-lg-7 connectedSortable">
+          <!-- Custom tabs (Charts with tabs)-->
+          <div class="nav-tabs-custom">
+            <!-- Tabs within a box -->
+            <ul class="nav nav-tabs pull-right">
+              <li class="pull-left header"><i class="fa fa-user"></i> Voters</li>
+            </ul>
+            <div class="tab-content no-padding">
+              <!-- Morris chart - Sales -->
+              <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 300px;"></div>
+              <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;"></div>
+            </div>
+          </div>
+          <!-- /.nav-tabs-custom -->
+  </section>
 
   <!-- jQuery 3 -->
   <script src="dist/bower_components/jquery/dist/jquery.min.js"></script>
