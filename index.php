@@ -22,7 +22,7 @@
 </head>
 <body>
   <?php
-  include "navbar-guest.php";
+  include "navbar-user.php";
    ?>
 
    <script scr="dist/js/bootstrap.min.js"></script>
