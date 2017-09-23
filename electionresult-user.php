@@ -54,7 +54,7 @@
                 <!-- /.box-body -->
                 <div class="progress-box">
                   <div class="progress">
-                    <div class="progress-bar progress-bar-green progress-bar-striped active" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
+                    <div class="progress-bar progress-bar-red progress-bar-striped active" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
                       38%
                     </div>
                   </div>
@@ -76,10 +76,13 @@
                 <!-- /.box-body -->
                 <div class="progress-box">
                   <div class="progress">
-                    <div class="progress-bar progress-bar-aqua progress-bar-striped active" role="progressbar" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100" style="width: 21%">
+                    <div class="progress-bar progress-bar-red progress-bar-striped active" role="progressbar" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100" style="width: 21%">
                       21%
                     </div>
                   </div>
+                  <p class="text-center">
+                    2043 votes
+                  </p>
                 </div>
                 <!-- /.progress-box -->
               </div>
@@ -119,10 +122,13 @@
                  <!-- /.box-body -->
                  <div class="progress-box">
                    <div class="progress">
-                     <div class="progress-bar progress-bar-yellow progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                     <div class="progress-bar progress-bar-red progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
                        40%
                      </div>
                    </div>
+                   <p class="text-center">
+                     3892 votes
+                   </p>
                  </div>
                  <!-- /.progress-box -->
                </div>
@@ -136,6 +142,17 @@
 
                  </div>
                  <!-- /.box-body -->
+                 <div class="progress-box">
+                   <div class="progress">
+                     <div class="progress-bar progress-bar-red  progress-bar-striped active" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
+                       38%
+                     </div>
+                   </div>
+                   <p class="text-center">
+                     3697 votes
+                   </p>
+                 </div>
+                 <!-- /.progress-box -->
                </div>
                <!-- /.box -->
              </div>
@@ -171,6 +188,17 @@
 
                   </div>
                   <!-- /.box-body -->
+                  <div class="progress-box">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-red progress-bar-striped active" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
+                        38%
+                      </div>
+                    </div>
+                    <p class="text-center">
+                      3697 votes
+                    </p>
+                  </div>
+                  <!-- /.progress-box -->
                 </div>
                 <div class="col-md-4">
                   <div class="box-body box-profile">
@@ -182,6 +210,17 @@
 
                   </div>
                   <!-- /.box-body -->
+                  <div class="progress-box">
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-red progress-bar-striped active" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
+                        38%
+                      </div>
+                    </div>
+                    <p class="text-center">
+                      3697 votes
+                    </p>
+                  </div>
+                  <!-- /.progress-box -->
                 </div>
                 <!-- /.box -->
               </div>
@@ -217,6 +256,17 @@
 
                    </div>
                    <!-- /.box-body -->
+                   <div class="progress-box">
+                     <div class="progress">
+                       <div class="progress-bar progress-bar-red progress-bar-striped active" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
+                         38%
+                       </div>
+                     </div>
+                     <p class="text-center">
+                       3697 votes
+                     </p>
+                   </div>
+                   <!-- /.progress-box -->
                  </div>
                  <div class="col-md-4">
                    <div class="box-body box-profile radio">
@@ -228,6 +278,17 @@
 
                    </div>
                    <!-- /.box-body -->
+                   <div class="progress-box">
+                     <div class="progress">
+                       <div class="progress-bar progress-bar-red progress-bar-striped active" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
+                         38%
+                       </div>
+                     </div>
+                     <p class="text-center">
+                       3697 votes
+                     </p>
+                   </div>
+                   <!-- /.progress-box -->
                  </div>
                  <!-- /.box -->
                </div>
@@ -263,6 +324,17 @@
 
                     </div>
                     <!-- /.box-body -->
+                    <div class="progress-box">
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-red progress-bar-striped active" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
+                          38%
+                        </div>
+                      </div>
+                      <p class="text-center">
+                        3697 votes
+                      </p>
+                    </div>
+                    <!-- /.progress-box -->
                   </div>
                   <div class="col-md-4">
                     <div class="box-body box-profile radio">
@@ -274,6 +346,17 @@
 
                     </div>
                     <!-- /.box-body -->
+                    <div class="progress-box">
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-red progress-bar-striped active" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
+                          38%
+                        </div>
+                      </div>
+                      <p class="text-center">
+                        3697 votes
+                      </p>
+                    </div>
+                    <!-- /.progress-box -->
                   </div>
                   <!-- /.box -->
                 </div>
