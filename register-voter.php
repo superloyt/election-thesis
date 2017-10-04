@@ -7,13 +7,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
   <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
   <link rel="stylesheet" href="dist/css/skins/skin-red.css">
-  <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="dist/css/bootstrap.css" rel="stylesheet" />
-  <link href="dist/css/AdminLTE.css" rel="stylesheet" />
-  <link href="dist/css/AdminLTE.min.css" rel="stylesheet" />
-  <link href="dist/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet" >
+  <link href="dist/css/bootstrap.css" rel="stylesheet" >
+  <link href="dist/css/AdminLTE.css" rel="stylesheet" >
+  <link href="dist/css/AdminLTE.min.css" rel="stylesheet" >
+  <link href="dist/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" >
   <link href="dist/bower_components/Ionicons/ionicons.min.css" rel="stylesheet" />
   <link href="dist/plugins/iCheck/square/blue.css" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="dist/bower_components/select2/dist/css/select2.css">
 
   <link href="assets/css/tup-main.css" rel="stylesheet" />
   <link href="assets/css/tup-media.css" rel="stylesheet" />
@@ -23,7 +25,7 @@
   <script scr="dist/js/adminlte.js"></script>
   <script scr="dist/js/adminlte.min.js"></script>
 </head>
-<body class="hold-transition skin-red fixed sidebar-mini">
+<body class="hold-transition skin-red sidebar-mini">
   <!-- Site wrapper -->
   <div class="wrapper">
 
@@ -315,7 +317,125 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
+      <section class="content-header">
+      <h1>
+        Add Voter
+        <small>New Voter</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="voters.php"><i class="fa fa-user"></i> Voters</a></li>
+        <li class="active"><i class="fa fa-user-plus"></i> Add Voter</li>
+      </ol>
+    </section>
+    <section class="content">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="box box-danger">
+            <div class="box-header">
+              <h3 class="box-title">Register Voter</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <form class="form-horizontal">
+                <div class="box-body">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Student ID</label>
 
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" placeholder="Student ID">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">First Name</label>
+
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Middle Name</label>
+
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" placeholder="Middle Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Last Name</label>
+
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="form-group" style="margin-top: 6%">
+                      <label class="col-sm-2 control-label">College</label>
+
+                      <div class="col-sm-10" style="padding-left: 2.9%">
+                        <select class="form-control select2" style="width: 97.8%;">
+                          <option selected="selected" disabled="disabled">Select College</option>
+                          <option>College of Architecture and Fine Arts</option>
+                          <option>College of Engineering</option>
+                          <option>College of Industrial Education</option>
+                          <option>College of Industrial Technology</option>
+                          <option>College of Liberal Arts</option>
+                          <option>College of Science</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Course</label>
+
+                      <div class="col-sm-10" style="padding-left: 2.9%">
+                        <select class="form-control select2" style="width: 97.8%;">
+                          <option selected="selected" disabled="disabled">Select Course</option>
+                          <option>Bachelor in Applied Science Major in Laboratory Technologies (BAS-LT)</option>
+                          <option>College of Engineering </option>
+                          <option>College of Industrial Education</option>
+                          <option>College of Industrial Technology</option>
+                          <option>College of Liberal Arts</option>
+                          <option>College of Science</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer">
+                  <button type="submit" class="btn btn-default">Cancel</button>
+                  <button type="submit" class="btn btn-danger pull-right">Add</button>
+                </div>
+                <!-- /.box-footer -->
+              </form>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box-danger -->
+        </div>
+        <!-- /.col-md-6 -->
+        <div class="col-md-4">
+          <div class="box box-info">
+            <div class="box-header">
+              <h3 class="box-title">Instructions</h3>
+            </div>
+            <!-- /.box-header -->
+          </div>
+          <!-- /.box-info -->
+        </div>
+      </div>
+    </section>
 
     <!-- Add the sidebar's background. This div must be placed
          immediately after the control sidebar -->
@@ -327,12 +447,35 @@
   <script src="dist/bower_components/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap 3.3.7 -->
   <script src="dist/js/bootstrap.min.js"></script>
+  <!-- DataTables -->
+  <script src="dist/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="dist/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
   <!-- SlimScroll -->
   <script src="dist/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
   <!-- FastClick -->
   <script src="dist/bower_components/fastclick/lib/fastclick.js"></script>
   <!-- AdminLTE App -->
   <script src="dist/dist/js/adminlte.min.js"></script>
+  <!-- page script -->
+  <script src="dist/bower_components/select2/dist/js/select2.full.min.js"></script>
+  <script>
+  $(function () {
+    $('.select2').select2()
+    $(".select2").select2({
+          placeholder: "Select College",
+          allowClear: true
+        });
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+  </script>
 
 </body>
 </html>

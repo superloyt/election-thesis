@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="dist/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
   <link rel="stylesheet" href="dist/plugins/timepicker/bootstrap-timepicker.min.css">
   <link rel="stylesheet" href="dist/bower_components/select2/dist/css/select2.min.css">
-  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
 
   <link href="assets/css/tup-main.css" rel="stylesheet" />
   <link href="assets/css/tup-media.css" rel="stylesheet" />

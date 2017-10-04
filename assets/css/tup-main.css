@@ -79,3 +79,11 @@ main .select2-container--default .select2-selection--single .select2-selection__
   background: #bd2031;
   background-color: #bd2031;
 }
+
+.margin-select {
+  margin-left: -5%;
+}
+
+main .form-control {
+  border-radius: 0;
+}
