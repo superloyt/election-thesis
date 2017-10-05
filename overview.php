@@ -12,8 +12,10 @@
   <link href="dist/css/AdminLTE.css" rel="stylesheet" />
   <link href="dist/css/AdminLTE.min.css" rel="stylesheet" />
   <link href="dist/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-  <link href="dist/bower_components/Ionicons/ionicons.min.css" rel="stylesheet" />
+  <link href="dist/bower_components/Ionicons/css/ionicons.min.css" rel="stylesheet" />
   <link href="dist/plugins/iCheck/square/blue.css" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/bower_components/morris.js/morris.css">
+  <link rel="stylesheet" href="dist/bower_components/bootstrap-daterangepicker/daterangepicker.css">
 
   <link href="assets/css/tup-main.css" rel="stylesheet" />
   <link href="assets/css/tup-media.css" rel="stylesheet" />
@@ -44,6 +46,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
+
+        <div style="color: #ffffff; margin-top: 13.7px; margin-left: 10px;">
+          <h4>Title of Election</h4>
+        </div>
       </nav>
     </header>
 
@@ -79,9 +85,9 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">MAIN NAVIGATION</li>
-          <li class="treeview">
-            <a href="dashboard.php">
-              <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          <li class="treeview active">
+            <a href="overview.php">
+              <i class="fa fa-eye"></i> <span>Overview</span>
               <!--
               <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
@@ -153,7 +159,7 @@
               <li><a href="#"><i class="fa fa-circle-o"></i> Political Party</a></li>
             </ul>
           </li>
-          <li class="treeview active">
+          <li class="treeview">
             <a href="archives.php">
               <i class="fa fa-archive"></i> <span>Archives</span>
               <!--
@@ -170,6 +176,26 @@
             </ul>
           -->
           </li>
+          <li class="header">ELECTION</li>
+          <li class="treeview">
+            <a href="">
+              <i class="fa fa-dashboard "></i>
+              <span>Dashboard</span>
+              <!--
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            -->
+            </a>
+            <!--
+            <ul class="treeview-menu">
+              <li><a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+              <li><a href="../charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+              <li><a href="../charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+              <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            </ul>
+          -->
+          </li>
         </ul>
       </section>
       <!-- /.sidebar -->
@@ -179,33 +205,110 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-        <!-- Default box -->
-        <div class="box">
-          <div class="box-header with-border">
-            <h3 class="box-title">Title</h3>
-
-            <div class="box-tools pull-right">
-              <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
-                <i class="fa fa-minus"></i></button>
-              <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
-                <i class="fa fa-times"></i></button>
-            </div>
-          </div>
-          <div class="box-body">
-            Start creating your amazing application!
-          </div>
-          <!-- /.box-body -->
-        </div>
-        <!-- /.box -->
-
+      <section class="content-header">
+        <h1>
+          Overview
+          <small>Control panel</small>
+        </h1>
+        <ol class="breadcrumb">
+          <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Overview</a></li>
+        </ol>
       </section>
-      <!-- /.content -->
-    <!-- /.control-sidebar -->
+
+      <!-- Main content -->
+    <section class="content">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3>44</h3>
+
+              <p>Voted</p>
+            </div>
+            <!--
+            <div class="icon">
+              <i class="ion ion-person"></i>
+            </div>
+          -->
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h3>40</h3>
+
+              <p>Candidates</p>
+            </div>
+            <!--
+            <div class="icon">
+              <i class="ion ion-person-stalker"></i>
+            </div>
+          -->
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3>150</h3>
+
+              <p>Voters Registered</p>
+            </div>
+            <!--
+            <div class="icon">
+              <i class="ion ion-person-add"></i>
+            </div>
+          -->
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-red">
+            <div class="inner">
+              <h3>65</h3>
+
+              <p>Visitors</p>
+            </div>
+            <!--
+            <div class="icon">
+              <i class="ion ion-eye"></i>
+            </div>
+          -->
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
     <!-- Add the sidebar's background. This div must be placed
          immediately after the control sidebar -->
     <div class="control-sidebar-bg"></div>
   </div>
-  <!-- ./wrapper -->
+  <!-- Main row -->
+      <div class="row">
+        <!-- Left col -->
+        <section class="col-lg-7 connectedSortable">
+          <!-- Custom tabs (Charts with tabs)-->
+          <div class="nav-tabs-custom">
+            <!-- Tabs within a box -->
+            <ul class="nav nav-tabs pull-right">
+              <li class="pull-left header"><i class="fa fa-user"></i>Latest Voters</li>
+            </ul>
+            <div class="tab-content no-padding">
+              <!-- Morris chart - Sales -->
+              <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 300px;"></div>
+              <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;"></div>
+            </div>
+          </div>
+          <!-- /.nav-tabs-custom -->
+  </section>
 
   <!-- jQuery 3 -->
   <script src="dist/bower_components/jquery/dist/jquery.min.js"></script>

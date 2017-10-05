@@ -31,7 +31,7 @@
     <div class="login-box-body">
       <p class="login-box-msg">SIGN IN TO START VOTING!</p>
 
-      <form action="home.php" method="post">
+      <form action="index.php" method="post">
         <div class="form-group has-feedback">
           <input type="name" name="student-id" class="form-control" placeholder="STUDENT ID">
         </div>
