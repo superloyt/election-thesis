@@ -15,6 +15,7 @@
   <link href="dist/bower_components/Ionicons/ionicons.min.css" rel="stylesheet" />
   <link href="dist/plugins/iCheck/square/blue.css" rel="stylesheet" />
   <link rel="stylesheet" href="dist/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="dist/bower_components/select2/dist/css/select2.css">
 
   <link href="assets/css/tup-main.css" rel="stylesheet" />
   <link href="assets/css/tup-media.css" rel="stylesheet" />
@@ -325,190 +326,119 @@
     <div class="content-wrapper">
       <section class="content-header">
       <h1>
-        Voters
-        <small>Students</small>
+        Add Voter
+        <small>New Voter</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="overview.php"><i class="fa fa-eye"></i> Overview</a></li>
-        <li class="active"><a href="voters.php"><i class="fa fa-user"></i> Voters</a></li>
+        <li><a href="voters.php"><i class="fa fa-user"></i> Voters</a></li>
+        <li class="active"><i class="fa fa-user-plus"></i> Add Voter</li>
       </ol>
     </section>
     <section class="content">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-md-8">
           <div class="box box-danger">
             <div class="box-header">
-              <h3 class="box-title">Voter Table</h3>
-              <div class="pull-right">
-                <a href="add-voter.php" class="btn btn-info">Add Voter <i class="fa fa-user-plus"></i></a>
-              </div>
+              <h3 class="box-title">Register Voter</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <table id="example1" class="table table-bordered table-hover">
-                <thead>
-                <tr>
-                  <th>Student ID</th>
-                  <th>Email</th>
-                  <th>Password</th>
-                  <th>Course</th>
-                  <th>College</th>
-                  <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0
-                  </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
-                  <td>
-                    <div class="btn-group">
-                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
-                      <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+              <form class="form-horizontal">
+                <div class="box-body">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Student ID</label>
+
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" placeholder="Student ID">
                     </div>
-                    </td>
-                </tr>
-                <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.0
-                  </td>
-                  <td>Win 95+</td>
-                  <td>5</td>
-                  <td>C</td>
-                  <td>
-                    <div class="btn-group">
-                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
-                      <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                     </div>
-                    </td>
-                </tr>
-                <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 5.5
-                  </td>
-                  <td>Win 95+</td>
-                  <td>5.5</td>
-                  <td>A</td>
-                  <td>
-                    <div class="btn-group">
-                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
-                      <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 6
-                  </td>
-                  <td>Win 98+</td>
-                  <td>6</td>
-                  <td>A</td>
-                  <td>
-                    <div class="btn-group">
-                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
-                      <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">First Name</label>
+
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" placeholder="First Name">
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Trident</td>
-                  <td>Internet Explorer 7</td>
-                  <td>Win XP SP2+</td>
-                  <td>7</td>
-                  <td>A</td>
-                  <td>
-                    <div class="btn-group">
-                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
-                      <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Middle Name</label>
+
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" placeholder="Middle Name">
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Trident</td>
-                  <td>AOL browser (AOL desktop)</td>
-                  <td>Win XP</td>
-                  <td>6</td>
-                  <td>A</td>
-                  <td>
-                    <div class="btn-group">
-                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
-                      <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Last Name</label>
+
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" placeholder="Last Name">
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Gecko</td>
-                  <td>Firefox 1.0</td>
-                  <td>Win 98+ / OSX.2+</td>
-                  <td>1.7</td>
-                  <td>A</td>
-                  <td>
-                    <div class="btn-group">
-                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
-                      <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                    <div class="form-group" style="margin-top: 6%">
+                      <label class="col-sm-2 control-label">College</label>
+
+                      <div class="col-sm-10" style="padding-left: 2.9%">
+                        <select class="form-control select2" style="width: 97.8%;">
+                          <option selected="selected" disabled="disabled">Select College</option>
+                          <option>College of Architecture and Fine Arts (CAFA)</option>
+                          <option>College of Engineering (COE)</option>
+                          <option>College of Industrial Education (CIE)</option>
+                          <option>College of Industrial Technology (CIT)</option>
+                          <option>College of Liberal Arts (CLA)</option>
+                          <option>College of Science (COS)</option>
+                        </select>
+                      </div>
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Gecko</td>
-                  <td>Firefox 1.5</td>
-                  <td>Win 98+ / OSX.2+</td>
-                  <td>1.8</td>
-                  <td>A</td>
-                  <td>
-                    <div class="btn-group">
-                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
-                      <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label">Course</label>
+
+                      <div class="col-sm-10" style="padding-left: 2.9%">
+                        <select class="form-control select2" style="width: 97.8%;">
+                          <option selected="selected" disabled="disabled">Select Course</option>
+                          <option>Bachelor in Applied Science Major in Laboratory Technologies (BAS-LT)</option>
+                          <option>Bachelor of Science in Computer Science (BSCS)</option>
+                          <option>Bachelor of Science in Environmental Science (BS-ES)</option>
+                          <option>Bachelor of Science in Information System (BSIS)</option>
+                          <option>Bachelor of Science in Information Technology (BSIT)</option>
+                        </select>
+                      </div>
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Gecko</td>
-                  <td>Firefox 2.0</td>
-                  <td>Win 98+ / OSX.2+</td>
-                  <td>1.8</td>
-                  <td>A</td>
-                  <td>
-                    <div class="btn-group">
-                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
-                      <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Gecko</td>
-                  <td>Firefox 3.0</td>
-                  <td>Win 2k+ / OSX.3+</td>
-                  <td>1.9</td>
-                  <td>A</td>
-                  <td>
-                    <div class="btn-group">
-                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
-                      <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
-                    </div>
-                  </td>
-                </tr>
-                </tbody>
-                <tfoot>
-                <tr>
-                  <th>Student ID</th>
-                  <th>Email</th>
-                  <th>Password</th>
-                  <th>Course</th>
-                  <th>College</th>
-                  <th>Actions</th>
-                </tr>
-                </tfoot>
-              </table>
+                  </div>
+                </div>
+                <!-- /.box-body -->
+                <div class="box-footer">
+                  <a href="voters.php" class="btn btn-default">Cancel</a>
+                  <button type="submit" class="btn btn-danger pull-right">Add</button>
+                </div>
+                <!-- /.box-footer -->
+              </form>
             </div>
+            <!-- /.box-body -->
           </div>
+          <!-- /.box-danger -->
+        </div>
+        <!-- /.col-md-6 -->
+        <div class="col-md-4">
+          <div class="box box-info">
+            <div class="box-header">
+              <h3 class="box-title">Instructions</h3>
+            </div>
+            <!-- /.box-header -->
+          </div>
+          <!-- /.box-info -->
         </div>
       </div>
     </section>
@@ -533,8 +463,10 @@
   <!-- AdminLTE App -->
   <script src="dist/dist/js/adminlte.min.js"></script>
   <!-- page script -->
+  <script src="dist/bower_components/select2/dist/js/select2.full.min.js"></script>
   <script>
   $(function () {
+    $('.select2').select2()
     $('#example1').DataTable()
     $('#example2').DataTable({
       'paging'      : true,

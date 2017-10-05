@@ -308,6 +308,13 @@
             </ul>
           -->
           </li>
+          <li class="header">ELECTION</li>
+          <li class="treeview">
+            <a href="">
+              <i class="fa fa-dashboard "></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
         </ul>
       </section>
       <!-- /.sidebar -->
@@ -323,7 +330,7 @@
         <small>New Voter</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="overview.php"><i class="fa fa-eye"></i> Overview</a></li>
         <li><a href="voters.php"><i class="fa fa-user"></i> Voters</a></li>
         <li class="active"><i class="fa fa-user-plus"></i> Add Voter</li>
       </ol>
