@@ -211,7 +211,7 @@
           <small>Control panel</small>
         </h1>
         <ol class="breadcrumb">
-          <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Overview</a></li>
+          <li class="active"><a href="#"><i class="fa fa-eye"></i> Overview</a></li>
         </ol>
       </section>
 
