@@ -360,7 +360,7 @@
                   <td>X</td>
                   <td>
                     <div class="btn-group">
-                      <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button>
+                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
                       <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
                     </div>
                     </td>
@@ -375,7 +375,7 @@
                   <td>C</td>
                   <td>
                     <div class="btn-group">
-                      <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button>
+                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
                       <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
                     </div>
                     </td>
@@ -390,7 +390,7 @@
                   <td>A</td>
                   <td>
                     <div class="btn-group">
-                      <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button>
+                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
                       <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
                     </div>
                   </td>
@@ -405,7 +405,7 @@
                   <td>A</td>
                   <td>
                     <div class="btn-group">
-                      <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button>
+                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
                       <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
                     </div>
                   </td>
@@ -418,7 +418,7 @@
                   <td>A</td>
                   <td>
                     <div class="btn-group">
-                      <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button>
+                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
                       <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
                     </div>
                   </td>
@@ -431,7 +431,7 @@
                   <td>A</td>
                   <td>
                     <div class="btn-group">
-                      <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button>
+                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
                       <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
                     </div>
                   </td>
@@ -444,7 +444,7 @@
                   <td>A</td>
                   <td>
                     <div class="btn-group">
-                      <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button>
+                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
                       <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
                     </div>
                   </td>
@@ -457,7 +457,7 @@
                   <td>A</td>
                   <td>
                     <div class="btn-group">
-                      <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button>
+                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
                       <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
                     </div>
                   </td>
@@ -470,7 +470,7 @@
                   <td>A</td>
                   <td>
                     <div class="btn-group">
-                      <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button>
+                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
                       <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
                     </div>
                   </td>
@@ -483,7 +483,7 @@
                   <td>A</td>
                   <td>
                     <div class="btn-group">
-                      <button type="button" class="btn btn-primary"><i class="fa fa-edit"></i></button>
+                      <a href="edit-voter.php" class="btn btn-primary"><i class="fa fa-edit"></i></a>
                       <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button>
                     </div>
                   </td>

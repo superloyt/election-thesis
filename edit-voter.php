@@ -319,13 +319,12 @@
     <div class="content-wrapper">
       <section class="content-header">
       <h1>
-        Add Voter
-        <small>New Voter</small>
+        Edit Voter
       </h1>
       <ol class="breadcrumb">
         <li><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
         <li><a href="voters.php"><i class="fa fa-user"></i> Voters</a></li>
-        <li class="active"><i class="fa fa-user-plus"></i> Add Voter</li>
+        <li class="active"><i class="fa fa-edit"></i> Edit Voter</li>
       </ol>
     </section>
     <section class="content">
@@ -333,7 +332,7 @@
         <div class="col-md-8">
           <div class="box box-danger">
             <div class="box-header">
-              <h3 class="box-title">Register Voter</h3>
+              <h3 class="box-title">Update Voter</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -413,8 +412,8 @@
                 </div>
                 <!-- /.box-body -->
                 <div class="box-footer">
-                  <button type="submit" class="btn btn-default">Cancel</button>
-                  <button type="submit" class="btn btn-danger pull-right">Add</button>
+                  <a href="voters.php" class="btn btn-default">Cancel</a>
+                  <button type="submit" class="btn btn-danger pull-right">Edit</button>
                 </div>
                 <!-- /.box-footer -->
               </form>
