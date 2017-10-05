@@ -92,3 +92,20 @@ main .form-control {
   color: #ffffff;
   margin-top: 13.7;
 }
+
+.strong {
+  font-weight: bold;
+}
+
+.yellow-text {
+  color: #f5d02a;;
+}
+
+.darkgreen-bg {
+  background-color: #355C7D;
+  color: #ffffff;
+}
+
+.darkgreen-bg:hover {
+  color: #CCCCCC;
+}
