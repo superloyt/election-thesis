@@ -10,12 +10,11 @@
   <link href="dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="dist/css/bootstrap.css" rel="stylesheet" />
   <link href="dist/css/AdminLTE.css" rel="stylesheet" />
-  <link href="dist/css/AdminLTE.min.css" rel="stylesheet" />
   <link href="dist/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
   <link href="dist/bower_components/Ionicons/css/ionicons.min.css" rel="stylesheet" />
   <link href="dist/plugins/iCheck/square/blue.css" rel="stylesheet" />
   <link rel="stylesheet" href="dist/bower_components/morris.js/morris.css">
-  <link rel="stylesheet" href="dist/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="dist/bower_components/bootstrap-daterangepicker/daterangepicker.css">
 
   <link href="assets/css/tup-main.css" rel="stylesheet" />
   <link href="assets/css/tup-media.css" rel="stylesheet" />
@@ -24,6 +23,10 @@
   <script scr="dist/js/bootstrap.js"></script>
   <script scr="dist/js/adminlte.js"></script>
   <script scr="dist/js/adminlte.min.js"></script>
+
+<!-- Morris.js charts -->
+<script src="dist/bower_components/raphael/raphael.min.js"></script>
+<script src="dist/bower_components/morris.js/morris.min.js"></script>
 </head>
 <body class="hold-transition skin-red fixed sidebar-mini">
   <!-- Site wrapper -->
@@ -299,12 +302,13 @@
           <div class="nav-tabs-custom">
             <!-- Tabs within a box -->
             <ul class="nav nav-tabs pull-right">
-              <li class="pull-left header"><i class="fa fa-user"></i>Latest Voters</li>
+              <li class="pull-left header"><i class="fa fa-user"></i>Voter Chart</li>
             </ul>
             <div class="tab-content no-padding">
-              <!-- Morris chart - Sales -->
-              <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 300px;"></div>
-              <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;"></div>
+            <div class="box-body chart-responsive">
+              <div class="chart" id="bar-chart" style="height: 300px;"></div>
+            </div>
+          <!-- /.box -->
             </div>
           </div>
           <!-- /.nav-tabs-custom -->
@@ -320,6 +324,33 @@
   <script src="dist/bower_components/fastclick/lib/fastclick.js"></script>
   <!-- AdminLTE App -->
   <script src="dist/dist/js/adminlte.min.js"></script>
+
+<!-- Morris.js charts -->
+<script src="dist/bower_components/raphael/raphael.min.js"></script>
+<script src="dist/bower_components/morris.js/morris.min.js"></script>
+
+  <script>
+  $(function () {
+    //BAR CHART
+    var bar = new Morris.Bar({
+      element: 'bar-chart',
+      resize: true,
+      data: [
+        {y:  'CAFA', a: 100, b: 90},
+        {y: 'COE', a: 75, b: 65},
+        {y: 'CIE', a: 50, b: 40},
+        {y: 'CIT', a: 75, b: 65},
+        {y: 'CLA', a: 50, b: 40},
+        {y: 'COS', a: 75, b: 65},
+      ],
+      barColors: ['#bd2031', '#222'],
+      xkey: 'y',
+      ykeys: ['a', 'b'],
+      labels: ['Voters', 'Voted'],
+      hideHover: 'auto'
+    });
+  });
+</script>
 
 </body>
 </html>
