@@ -22,9 +22,9 @@
    ?>
    <div class="container">
      <div class="row">
-       <div class="col-md-8 col-md-offset-2">
+       <div class="col-md-6 col-md-offset-3">
          <div class="pad margin no-print">
-          <div class="callout callout-danger" style="margin: -2% -3% 0!important; ">
+          <div class="callout callout-danger" style="margin: -4% -4% 0!important; ">
             <h4><i class="fa fa-info"></i> Note:</h4>
             Please review your chosen representatives. You can vote again to change them or submit your votes.
           </div>
@@ -34,7 +34,7 @@
      </div>
 
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-6 col-md-offset-3">
         <div class="box box-danger">
           <div class="box-body ">
             <dl>
