@@ -31,10 +31,6 @@
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-menubuilder" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="index.php">Vote</a></li>
-          <li><a href="electionresult-user.php">Election Results</a></li>
-        </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="index.php">Sign out</a></li>
         </ul>
