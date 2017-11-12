@@ -123,3 +123,10 @@ main .form-control {
   text-align: center;
   font-size: 18px;
 }
+
+.thank-vote {
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  width: 75px;
+}
