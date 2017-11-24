@@ -23,7 +23,7 @@
   <script scr="dist/js/adminlte.js"></script>
   <script scr="dist/js/adminlte.min.js"></script>
 </head>
-<body class="hold-transition skin-red fixed sidebar-mini">
+<body class="hold-transition skin-red sidebar-mini">
   <!-- Site wrapper -->
   <div class="wrapper">
 
@@ -186,33 +186,74 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-        <!-- Default box -->
-        <div class="box">
-          <div class="box-header with-border">
-            <h3 class="box-title">Title</h3>
-
-            <div class="box-tools pull-right">
-              <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
-                <i class="fa fa-minus"></i></button>
-              <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
-                <i class="fa fa-times"></i></button>
-            </div>
-          </div>
-          <div class="box-body">
-            Start creating your amazing application!
-          </div>
-          <!-- /.box-body -->
-        </div>
-        <!-- /.box -->
-
+      <section class="content-header">
+        <h1>
+          Results
+          <small>Title of Election</small>
+        </h1>
+        <ol class="breadcrumb">
+          <li class="active"><a href="#"><i class="fa fa-star"></i> Results</a></li>
+        </ol>
       </section>
-      <!-- /.content -->
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
-    <div class="control-sidebar-bg"></div>
-  </div>
-  <!-- ./wrapper -->
+
+      <!-- Main content -->
+      <section class="content">
+        <!-- Main row -->
+        <div class="row">
+          <!-- Left col -->
+          <section class="col-md-6 connectedSortable">
+          <!-- Custom tabs (Charts with tabs)-->
+            <div class="nav-tabs-custom">
+              <!-- Tabs within a box -->
+              <ul class="nav nav-tabs pull-right">
+                <li class="pull-left header"><i class="fa fa-bar-chart-o"></i>President Chart</li>
+              </ul>
+              <div class="tab-content no-padding">
+                <div class="box-body chart-responsive">
+                  <div id="donut-chart" style="height: 300px;"></div>
+                </div>
+                <!-- /.box -->
+              </div>
+            </div>
+            <!-- /.nav-tabs-custom -->
+          </section>
+          <!-- Right col -->
+          <section class="col-md-6 connectedSortable">
+          <!-- Custom tabs (Charts with tabs)-->
+            <div class="nav-tabs-custom">
+              <!-- Tabs within a box -->
+              <ul class="nav nav-tabs pull-right">
+                <li class="pull-left header"><i class="fa fa-bar-chart-o"></i>Vice President Chart</li>
+              </ul>
+              <div class="tab-content no-padding">
+                <div class="box-body chart-responsive">
+                  <div id="donut-chart1" style="height: 300px;"></div>
+                </div>
+                <!-- /.box -->
+              </div>
+            </div>
+            <!-- /.nav-tabs-custom -->
+          </section>
+          <!-- Right col -->
+          <section class="col-md-6 connectedSortable">
+          <!-- Custom tabs (Charts with tabs)-->
+            <div class="nav-tabs-custom">
+              <!-- Tabs within a box -->
+              <ul class="nav nav-tabs pull-right">
+                <li class="pull-left header"><i class="fa fa-bar-chart-o"></i>Senators Chart</li>
+              </ul>
+              <div class="tab-content no-padding">
+                <div class="box-body chart-responsive">
+                  <div id="donut-chart2" style="height: 300px;"></div>
+                </div>
+                <!-- /.box -->
+              </div>
+            </div>
+            <!-- /.nav-tabs-custom -->
+          </section>
+        </div>
+      </section>
+    </div>
 
   <!-- jQuery 3 -->
   <script src="dist/bower_components/jquery/dist/jquery.min.js"></script>
@@ -224,6 +265,112 @@
   <script src="dist/bower_components/fastclick/lib/fastclick.js"></script>
   <!-- AdminLTE App -->
   <script src="dist/dist/js/adminlte.min.js"></script>
+  <!-- FLOT CHARTS -->
+<script src="dist/bower_components/Flot/jquery.flot.js"></script>
+<!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
+<script src="dist/bower_components/Flot/jquery.flot.resize.js"></script>
+<!-- FLOT PIE PLUGIN - also used to draw donut charts -->
+<script src="dist/bower_components/Flot/jquery.flot.pie.js"></script>
+<!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
+<script src="dist/bower_components/Flot/jquery.flot.categories.js"></script>
+<!-- Page script -->
+
+  <script>
+    $(function () {
+      /*
+     * DONUT CHART
+     * -----------
+     */
+
+    var PresData = [
+      { label: 'Candidate 1', data: 30, color: '#bd2031' },
+      { label: 'Candidate 2', data: 20, color: '#971927' },
+      { label: 'Candidate 3', data: 50, color: '#c33645' }
+    ]
+    var VicePresData = [
+      { label: 'Candidate 1', data: 30, color: '#bd2031' },
+      { label: 'Candidate 2', data: 20, color: '#971927' },
+      { label: 'Candidate 3', data: 50, color: '#c33645' }
+    ]
+    var SenatorData = [
+      { label: 'Candidate 1', data: 30, color: '#bd2031' },
+      { label: 'Candidate 2', data: 20, color: '#971927' },
+      { label: 'Candidate 3', data: 50, color: '#c33645' }
+    ]
+    $.plot('#donut-chart', PresData, {
+      series: {
+        pie: {
+          show       : true,
+          radius     : 1,
+          innerRadius: 0.5,
+          label      : {
+            show     : true,
+            radius   : 2 / 3,
+            formatter: labelFormatter,
+            threshold: 0.1
+          }
+
+        }
+      },
+      legend: {
+        show: false
+      }
+    });
+    $.plot('#donut-chart1', VicePresData, {
+      series: {
+        pie: {
+          show       : true,
+          radius     : 1,
+          innerRadius: 0.5,
+          label      : {
+            show     : true,
+            radius   : 2 / 3,
+            formatter: labelFormatter,
+            threshold: 0.1
+          }
+
+        }
+      },
+      legend: {
+        show: false
+      }
+    });
+    $.plot('#donut-chart2', VicePresData, {
+      series: {
+        pie: {
+          show       : true,
+          radius     : 1,
+          innerRadius: 0.5,
+          label      : {
+            show     : true,
+            radius   : 2 / 3,
+            formatter: labelFormatter,
+            threshold: 0.1
+          }
+
+        }
+      },
+      legend: {
+        show: false
+      }
+    });
+    /*
+     * END DONUT CHART
+     */
+
+
+     /*
+        * Custom Label formatter
+        * ----------------------
+        */
+       function labelFormatter(label, series) {
+         return '<div style="font-size:13px; text-align:center; padding:2px; color: #fff; font-weight: 600;">'
+           + label
+           + '<br>'
+           + Math.round(series.percent) + '%</div>'
+       }
+   });
+  </script>
 
 </body>
 </html>

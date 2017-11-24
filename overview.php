@@ -313,6 +313,9 @@
           </div>
           <!-- /.nav-tabs-custom -->
   </section>
+</div>
+</section>
+</div>
 
   <!-- jQuery 3 -->
   <script src="dist/bower_components/jquery/dist/jquery.min.js"></script>
